@@ -19,7 +19,7 @@
     --color-box-footer: #FAFAFC;
     --color-small-info: #C1BCCC;
 
-    /* tamanho da fonte */
+    /* tamanho da fonte padrão: 16px - 100% - 1rem */
     /* o rem tem como base o tamanho declarado na root */
     font-size: 60%; /* controle das medidas rem */
 }
@@ -57,4 +57,11 @@ textarea {
 #container {
     width: 90vw;
     max-width: 700px;
+}
+
+/* de 700 até 1100 do desktop */
+@media (min-width:700px) {
+    :root {
+        font-size: 62.5%; /*todo 1rem vai ser relativo a 10px */
+    }
 }
